@@ -1,5 +1,5 @@
 <template>
-    <div>ini halaman hitung</div>
+    <div></div>
 </template>
 
 <script>
