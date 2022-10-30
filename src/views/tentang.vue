@@ -1,5 +1,5 @@
 <template>
-    <div>tentang</div>
+    <div>ini tentang</div>
 </template>
 
 <script>

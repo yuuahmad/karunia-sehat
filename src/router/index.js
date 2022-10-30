@@ -26,6 +26,11 @@ const router = createRouter({
       path: '/daftar',
       name: 'daftar',
       component: () => import('../views/daftar.vue')
+    },
+    {
+      path: '/todo',
+      name: 'todo',
+      component: () => import('../views/todoApp.vue')
     }
   ]
 })
