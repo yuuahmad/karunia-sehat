@@ -33,7 +33,7 @@
     <div>
         <div class="judul-satu">tim klinik karunia sehat</div>
         <div class="grid justify-between grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center ">
-            <div v-for="tim in tims" :key="tim.id" class="px-10 grid grid-cols-1 justify-items-center bg-gray-300">
+            <div v-for="tim in tims" :key="tim.id" class="px-10 grid grid-cols-1 justify-items-center ">
                 <img class="inline object-cover w-24 md:w-32 h-24 md:h-32 m-1 rounded-full " :src="tim.linkGambar"
                     alt="">
                 <div class="text-center text-md md:text-xl capitalize">{{tim.nama}} </div>

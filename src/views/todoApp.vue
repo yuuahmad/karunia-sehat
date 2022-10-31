@@ -135,8 +135,6 @@ const doneTodo = id => {
     updateDoc(doc(getFirestore(), "todos", id), {
         done: !todos.value[index].done
     });
-
-
 }
 
 // program tambah angka sederhana

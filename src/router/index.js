@@ -9,14 +9,14 @@ const router = createRouter({
       name: 'home',
       component: Home
     },
-    {
-      path: '/tentang',
-      name: 'tentang',
-      // route level code-splitting
-      // this generates a separate chunk (tentang.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/tentang.vue')
-    },
+    // {
+    //   path: '/tentang',
+    //   name: 'tentang',
+    //   // route level code-splitting
+    //   // this generates a separate chunk (tentang.[hash].js) for this route
+    //   // which is lazy-loaded when the route is visited.
+    //   component: () => import('../views/tentang.vue')
+    // },
     {
       path: '/penghitung',
       name: 'penghitung',

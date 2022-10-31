@@ -37,8 +37,6 @@ export default {
                 { judul: "penghitung antrian", to: "/penghitung" },
                 { judul: "daftar antrian", to: "/daftar" },
                 { judul: "todo app", to: "/todo" },
-
-
             ]
         }
     }
