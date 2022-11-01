@@ -29,7 +29,7 @@
         </div>
         <div class="text-center text-xl md:mx-24 lg:mx-64">
             jika anda menekan tombol ini, maka antrian yang telah terlayani akan terhapus. jika anda bukanlah admin
-            klinik, jangan pernah menekan tombol ini. (patuhi peraturan ini demi kepentingan bersama) (bukayakan hidup
+            klinik, jangan pernah menekan tombol ini. (patuhi peraturan ini demi kepentingan bersama) (budayakan hidup
             jujur) (budayakan antri)
         </div>
         <div class="text-center py-3">
@@ -42,11 +42,12 @@
 import { ref, onMounted, reactive } from 'vue'
 import { v4 as uuidv4 } from 'uuid'
 import { addDoc, collection, getDocs, getFirestore, updateDoc, query, where, onSnapshot, doc, setDoc, deleteDoc, orderBy, limit, serverTimestamp } from "firebase/firestore";
+import suarasaya from '/src/assets/audiosaya.mp3'
 
 const nama = ref('')
 const umur = ref('')
 const domisili = ref('')
-const mytrack = new Audio('/src/assets/audiosaya.mp3')
+const mytrack = new Audio(suarasaya)
 
 // mendapatkan data pertama yang ingin dihapus (yang udah dilayanin)
 onMounted(() => {
@@ -112,9 +113,9 @@ const daftarAntrian = (nomor) => {
 // delete antrian
 const deleteSelesaiPeriksa = id => {
     // gunakan filter untuk menghapus todo
-    mytrack.play()
     deleteDoc(doc(getFirestore(), "antrians", id));
     console.log("data selesai telah dihapus")
+    mytrack.play()
     // todos.value = todos.value.filter(todo => todo.id !== id)
 }
 </script>

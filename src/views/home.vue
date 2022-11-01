@@ -2,21 +2,21 @@
     <!-- bagian pertama -->
     <div>
         <div class="judul-satu ">tentang klinik karunia sehat</div>
-        <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem tenetur ab veniam totam nisi
-            itaque
-            omnis consequatur debitis, sapiente nemo eum molestias aspernatur ad architecto. Modi ipsum possimus
-            temporibus.
-            Dolorum?
-            Beatae corporis enim exercitationem, quidem repellendus, assumenda similique aspernatur sit voluptas unde
-            ipsa
-            minima molestias et asperiores expedita, vel facere! Laborum omnis dolorum saepe sunt quae iste minus
-            voluptatum
-            aliquam?
-            Animi consectetur provident maxime blanditiis repellat explicabo, corporis impedit. Quibusdam qui quia nihil
-            corrupti, officiis quod vel nesciunt, ipsa dolore tempore harum! Fuga accusamus exercitationem natus
-            molestiae.
-            Soluta, eveniet similique!
-            Sapiente incidunt fugiat, atque ab porr</div>
+        <div class="text-xl">Seluruh karyawan Klinik Karunia Sehat Desa Pasuruan Kecamatan Penengahan, mengucapkan
+            selamat datang
+            bagi para pengunjung website
+            Klinik kami.
+            Di zaman kemajuan teknologi informasi saat ini membuat informasi akan menjadi lebih mudah, transparansi
+            menjadi kata
+            kunci yang sangat penting. Kita dapat berinteraksi tidak terbatas oleh tempat dan waktu.
+            Hal ini juga bermanfaat bagi peningkatan mutu layanan kami kepada masyarakat, khususnya bagi kami di Klinik
+            Karunia Sehat. Dengan adanya website ini diharapkan mampu meningkatkan pelayanan kesehatan pada masyarakat,
+            dan
+            komunikasi timbal
+            balik antara masyarakat dan puskesmas dapat dilaksanakan dengan mudah.
+            Akhir kata, semoga dengan adanya website ini pula, kami berharap masyarakat dapat mengenal Klinik Karunia
+            Sehat dengan lebih dalam dan bersedia memanfaatkan pelayanan kami, sehingga kami dapat terus
+            berkomitmen dalam meningkatkan pelayanan kesehatan.</div>
     </div>
 
     <!-- bagian kedua -->
@@ -32,11 +32,13 @@
 
     <div>
         <div class="judul-satu">tim klinik karunia sehat</div>
-        <div class="grid justify-between grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center ">
+        <div class="flex justify-center ">
             <div v-for="tim in tims" :key="tim.id" class="px-10 grid grid-cols-1 justify-items-center ">
                 <img class="inline object-cover w-24 md:w-32 h-24 md:h-32 m-1 rounded-full " :src="tim.linkGambar"
                     alt="">
                 <div class="text-center text-md md:text-xl capitalize">{{tim.nama}} </div>
+                <div class="text-center text-sm md:text-md capitalize">{{tim.penanggungjawab}} </div>
+
             </div>
         </div>
     </div>
@@ -50,37 +52,21 @@ import imageDua from '/src/assets/dua.png'
 import imageTiga from '/src/assets/hamzah.jpg'
 import imageEmpat from "/src/assets/yusuf.jpeg"
 import imageLima from "/src/assets/eko.jpeg"
+import imageEnam from "/src/assets/robi.jpeg"
+
 
 const tims = ref([
     {
         id: '1',
         nama: 'ahmad yusuf maulana',
         penanggungjawab: 'web developer',
-        linkGambar: imageSatu
-    },
-    {
-        id: '2',
-        nama: 'muhammad robiyanto sertamulyo',
-        penanggungjawab: 'konten kreator',
-        linkGambar: imageDua
-    },
-    {
-        id: '3',
-        nama: 'muhammad ali',
-        penanggungjawab: 'dokter',
-        linkGambar: imageTiga
-    },
-    {
-        id: '4',
-        nama: 'abul khanafi',
-        penanggungjawab: 'asisten dokter',
         linkGambar: imageEmpat
     },
     {
-        id: '5',
-        nama: 'agus prasetyo',
-        penanggungjawab: 'apoteker',
-        linkGambar: imageLima
+        id: '2',
+        nama: 'robiyanto',
+        penanggungjawab: 'konten kreator',
+        linkGambar: imageEnam
     },
 ])
 

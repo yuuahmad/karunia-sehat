@@ -1,13 +1,13 @@
 <template>
     <!-- lg:flex justify-between -->
     <div class=" py-10 flex-none">
-        <div class="lg:flex items-center justify-around bg-gray-200 my-10 mx-4 py-5 w-full">
+        <div class="lg:flex items-center justify-around bg-gray-200 my-10 py-5 w-full">
             <div class="text-center">
-                <div class=" text-4xl">Antrian Ke </div>
-                <!-- <div class="font-bold text-8xl md:text-[180px]">A-{{antrianKe.nomor}} </div> -->
-                <div class="font-bold text-8xl md:text-[180px]" v-if="antrianKe.nomor >=0">A-{{
+                <div class=" text-2xl lg:text-4xl">Antrian Ke </div>
+                <!-- <div class="font-bold text-5xl md:text-[100px] lg:text-[180px] mx-5">A-{{antrianKe.nomor}} </div> -->
+                <div class="font-bold text-5xl md:text-[100px] lg:text-[180px] mx-5" v-if="antrianKe.nomor >=0">A-{{
                 antrianKe.nomor}} </div>
-                <div class="font-bold text-8xl md:text-[180px]" v-else>
+                <div class="font-bold text-5xl md:text-[100px] lg:text-[180px] mx-5" v-else>
                     != antrian
                 </div>
             </div>
@@ -19,14 +19,14 @@
                 <div>domisili : {{antrianKe.domisili}}</div>
             </div>
         </div>
-        <div class="lg:flex items-center justify-around bg-gray-200 my-10 mx-4 py-5 w-full">
+        <div class="lg:flex items-center justify-around bg-gray-200 my-10 py-5 w-full">
             <div class="text-center">
-                <div class=" text-4xl">Akhir Antrian </div>
+                <div class=" text-2xl lg:text-4xl">Akhir Antrian </div>
                 <!-- Date(antrianAkhir.nomor *1000).toLocaleTimeString("it-IT") -->
-                <div class="font-bold text-8xl md:text-[180px]" v-if="antrianAkhir.nomor >=0">
+                <div class="font-bold text-5xl md:text-[100px] lg:text-[180px] mx-5" v-if="antrianAkhir.nomor >=0">
                     A-{{antrianAkhir.nomor}}
                 </div>
-                <div class="font-bold text-8xl md:text-[180px]" v-else>
+                <div class="font-bold text-5xl md:text-[100px] lg:text-[180px] mx-5" v-else>
                     != antrian
                 </div>
             </div>
